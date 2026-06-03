@@ -23,8 +23,7 @@
 
 # 1. Four Paths Overview
 
-| Path | Test prompt | AI response hiện tại | User thấy gì? | Evidence |
-|---|---|---|---|---|---|
+| Path | Test prompt | AI response hiện tại | User thấy gì? | Evidence |  
 | Happy | Tìm nhà thuốc gần nhất | 6 nhà thuốc để lựa chọn: Cửa hàng FPT Long Châu, Nhà thuốc Pharmacity, ... | [Happy evidence](screenshots/z7896504931428_7b8e818c20e5063e9006e4c48740984a.jpg) |  
 | Low-confidence | Tôi muốn đăng kí mua xe điện vinfast | Shows options hỏi kĩ lại người dùng là Ô tô điện hay xe máy điện | [Low-confidence evidence](screenshots/z7896522669329_a675a454b5a2321f711ac45184b09911.jpg) |  
 | Failure | Tôi ko muốn bạn đưa ra các gợi ý tiếp theo sau mỗi phản hồi nữa (gây rối thông tin), sau đó hỏi lại hướng dẫn mua xe VF9 | V-AI đã ghi nhận yêu cầu, nhưng khi được hỏi lại thì vẫn show các gợi ý tiếp theo  | [Failure evidence](screenshots/z7896528924286_2724eac941760e6eef1956df47e2033a.jpg) và [Failure evidence](screenshots/z7896531289192_c46bdb3ffabb49b9f9b86bc1c3239325.jpg) |  
