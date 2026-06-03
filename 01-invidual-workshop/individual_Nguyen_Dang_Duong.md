@@ -9,21 +9,7 @@
 | Failure | Tôi ko muốn bạn đưa ra các gợi ý tiếp theo sau mỗi phản hồi nữa (gây rối thông tin), sau đó hỏi lại hướng dẫn mua xe VF9 | V-AI đã ghi nhận yêu cầu, nhưng khi được hỏi lại thì vẫn show các gợi ý tiếp theo  | [Failure evidence](screenshots/z7896528924286_2724eac941760e6eef1956df47e2033a.jpg) và [Failure evidence](screenshots/z7896531289192_c46bdb3ffabb49b9f9b86bc1c3239325.jpg) |  
 | Correction | Phát hiện và prompt lại là "Bạn vẫn đưa ra các gợi ý ? Tôi đã bảo là ko được đưa ra các gợi ý tiếp theo", rồi hỏi lại cách mua vf9 | V-AI vẫn đưa ra gợi ý, correction không được thực hiện | [Correction evidence](screenshots/z7896545949236_a8807289200b29e4bdaa943a9fb6ea93.jpg) và [Correction evidence](screenshots/z7896545983265_7d257c73af0981558eb9bd3930e0ea6e.jpg) |
 
----
-
-# 2. Path 1 — Happy Path
-
-## 2.1 Trigger
-
-User nhập:
-
-```text
-...
-```
-
----
-
-# 4. Finding (product decision)
+# 2. Finding (product decision)
 
 Khi user yêu cầu V-AI không đưa ra các gợi ý tiếp theo sau mỗi phản hồi, V-AI có ghi nhận yêu cầu nhưng không thật sự thay đổi hành vi ở các lượt hỏi sau.
 
@@ -44,7 +30,7 @@ Requirement đề xuất: Nếu user nói các câu như "đừng đưa ra gợi
 
 ---
 
-# 5. Sketch as-is / to-be
+# 3. Sketch as-is / to-be
 
 | As-is | To-be |
 |---|---|
@@ -57,7 +43,7 @@ Requirement đề xuất: Nếu user nói các câu như "đừng đưa ra gợi
 
 ---
 
-# 6. Finding này sẽ đổi gì trong SPEC
+# 4. Finding này sẽ đổi gì trong SPEC
 
 SPEC cần bổ sung requirement để V-AI ghi nhớ preference của user trong session hiện tại.
 
@@ -67,7 +53,7 @@ SPEC cũng cần có test case kiểm tra hành vi này bằng cách cho user đ
 
 ---
 
-# 7. Tự kiểm trước khi nộp
+# 5. Tự kiểm trước khi nộp
 
 - [x] Có ít nhất 1 screenshot hoặc observation cụ thể.
 - [x] Có đủ 4 paths: Happy, Low-confidence, Failure, Correction đều đã được test với prompt cụ thể và có evidence screenshot đi kèm.
