@@ -60,8 +60,16 @@ Nếu học viên chỉ còn 35-45 phút nghỉ trưa và cần món nóng ăn n
 AI có thể gợi ý món/quán có ETA quá lâu, dễ nguội hoặc không phù hợp ngân sách/khẩu vị,
 hậu quả là user không kịp ăn, vào lớp muộn hoặc mất niềm tin vào chatbot.
 Prototype sẽ xử lý bằng ask again, cho sửa tiêu chí, show ETA/độ nóng/độ dễ ăn nhanh và fallback sang món gần hơn hoặc món sẵn nhanh hơn.
-Owner kiểm thử path này là [tên thành viên phụ trách test].
+Owner kiểm thử path này là Huy.
 ```
 
 ## 8. Owner plan cho sáng Day 06
 
+Đây là kế hoạch hành động tiếp theo cho sáng Day 06: tập trung build prototype chatbot, chuẩn bị dữ liệu món/quán, kiểm thử các path và chuẩn bị demo.
+
+| Thành viên | Việc sẽ làm sáng Day 06 | Output cần có trong repo |
+|---|---|---|
+| Huy, Khải | Xây dựng flow chatbot: màn hình nhập nhu cầu, câu hỏi làm rõ và màn hình trả 3 gợi ý món/quán. | Prototype chatbot chạy được flow happy path và low-confidence path. |
+| Đạt | Chuẩn bị dữ liệu món/quán mock gần VinUni: tên món, giá, ETA, mức độ no, độ nóng, tag khẩu vị, trust signal. | File/mock data 10-15 món/quán dùng được cho prototype. |
+| Đạt | Viết logic gợi ý và correction: lọc theo thời gian còn lại, ngân sách, khẩu vị, món nóng/dễ ăn nhanh. | Rule/prompt gợi ý món và flow cập nhật kết quả khi user sửa tiêu chí. |
+| Dương, Khải | Test prototype và chuẩn bị demo: happy, low-confidence, failure, correction. | Ghi chú test 4 paths, case failure AI gợi ý món giao không kịp, demo script 3-5 phút. |
