@@ -18,22 +18,15 @@ Folder này được chia theo đúng việc cần làm:
 Mỗi học viên nộp **một repo cá nhân**:
 
 ```text
-Day06-MãHọcViên-HọVàTên-MãNhóm/
-├── group/
-│   ├── evidence-pack.md
-│   ├── thin-spec.md
-│   ├── owner-plan.md
-│   ├── prototype-readme.md
-│   ├── demo-script.md
-│   └── failure-test-log.md
-└── individual/
-    └── reflection.md
+Day06-MãHọcViên-HọVàTên
+├── individual/
+└── group/
 ```
 
 Trong đó:
 
-- `group/`: bản làm chung của nhóm. Mỗi học viên copy bản cuối vào repo cá nhân của mình.
 - `individual/`: phần reflection cá nhân, nêu rõ vai trò, việc đã làm, phần AI hỗ trợ, và bài học sau demo.
+- `group/`: bản làm chung của nhóm. Mỗi học viên copy bản cuối vào repo cá nhân của mình.
 
 ## Đọc file nào để làm gì?
 
