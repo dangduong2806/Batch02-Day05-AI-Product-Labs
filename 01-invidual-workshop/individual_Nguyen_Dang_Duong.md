@@ -57,10 +57,20 @@ Requirement đề xuất: Nếu user nói các câu như "đừng đưa ra gợi
 
 ---
 
-# 6. Tự kiểm trước khi nộp
+# 6. Finding này sẽ đổi gì trong SPEC
+
+SPEC cần bổ sung requirement để V-AI ghi nhớ preference của user trong session hiện tại.
+
+Cụ thể, khi user yêu cầu không hiển thị các gợi ý tiếp theo sau mỗi phản hồi, V-AI phải tắt suggestion chips trong các lượt trả lời tiếp theo của cùng session và chỉ bật lại khi user yêu cầu hoặc bắt đầu session mới.
+
+SPEC cũng cần có test case kiểm tra hành vi này bằng cách cho user đưa ra preference, hỏi tiếp ít nhất 2-3 lượt, và xác nhận rằng V-AI không còn hiển thị gợi ý tiếp theo.
+
+---
+
+# 7. Tự kiểm trước khi nộp
 
 - [x] Có ít nhất 1 screenshot hoặc observation cụ thể.
 - [x] Có đủ 4 paths: Happy, Low-confidence, Failure, Correction đều đã được test với prompt cụ thể và có evidence screenshot đi kèm.
 - [x] Finding được viết thành product decision, không chỉ là nhận xét.
 - [x] Sketch có as-is và to-be.
-- [x] Có một câu nói rõ finding này sẽ đổi gì trong SPEC: SPEC cần bổ sung requirement để V-AI ghi nhớ preference của user trong session hiện tại, đặc biệt với yêu cầu không hiển thị gợi ý tiếp theo.
+- [x] Có một câu nói rõ finding này sẽ đổi gì trong SPEC.
